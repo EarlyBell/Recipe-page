@@ -1,64 +1,104 @@
-*{
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: wheat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.dark {
+  background-color: rgba(0, 0, 0, 0.76);
+  color: white;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  position: relative;
+  width: 100lvw;
+  button {
+    position: absolute;
+    right: 0;
+    padding: 7px;
+    border-radius: 50%;
+    border: 0;
+    outline: 1px solid black;
+    margin-right: 20px;
+  }
+}
+.container {
+  position: relative;
+  width: 100vw;
+  height: fit-content;
+  min-height: 100vh;
+  pad: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+h1 {
+  text-align: center;
+  padding: 10px;
+  font-size: 30px;
+}
+
+.package {
+  width: 90vw;
+  height: 200px;
+  border: solid;
+  background-color: white;
+  display: flex;
+  border-radius: 10px;
+
+  img {
+    width: 35%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+    border: 1px solid black;
+  }
+}
+.preview {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  h1 {
+    text-align: left;
     padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  }
 }
-.container{
-    position: relative;
-    width: 100vw;
-    height: fit-content;
-    min-height: 100vh;
-    pad: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    justify-content: center;
-    background-color: wheat;
+.package-dark {
+  background-color: rgba(0, 0, 0, 0.644);
+  color: red;
 }
-h1{
-    text-align: center;
-    padding: 10px;
-}
+.modal {
+  width: 80%;
+  height: 500px;
+  overflow-y: scroll;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: pink;
+  color: black;
+  position: fixed;
+  top: 40px;
 
-.package{
-    width: 90vw;
-    height: 200px;
-    border: solid;
-    background-color: white;
-    display: flex;
-
-    img{
-        width: 35%;
-        height: 100%;
-        object-fit: cover;
-    }
+  img {
+    width: 50%;
+    margin: auto;
+    display: block;
+  }
 }
-.preview{
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    h1{
-        text-align: left;
-        padding: 0;
-    }
-}
-
-.modal{
-    width: 80%;
-    height: 500px;
-    overflow-y: scroll;
-    padding: 15px;
-    border-radius: 10px;
-    background-color: pink;
-    color: black;
-    position: fixed;
-    top: 40px;
-
-    img{
-        width: 50%;
-        margin: auto;
-        display: block;
-    }
+#search{
+  padding: 8px;
+  width: 400px;
 }
